@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReservaPlus | Gestor de Citas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <i class="fas fa-calendar-check logo-icon"></i>
+      <h1><span class="highlight">Reserva</span>Plus</h1>
+      <p class="subtitle">Gestión inteligente de citas</p>
+    </div>
+
+    <form id="formulario">
+      <div class="input-group">
+        <i class="fas fa-user input-icon"></i>
+        <input type="text" id="nombre" placeholder="Nombre del cliente" required>
+      </div>
+      
+      <div class="input-group">
+        <i class="fas fa-calendar-day input-icon"></i>
+        <input type="date" id="fecha" required>
+      </div>
+      
+      <div class="input-group">
+        <i class="fas fa-clock input-icon"></i>
+        <input type="time" id="hora" required>
+      </div>
+      
+      <button type="submit">
+        <i class="fas fa-plus-circle"></i> Crear Reserva
+      </button>
+    </form>
+
+    <div class="section-title">
+      <i class="fas fa-list-alt"></i>
+      <h2>Reservas Registradas</h2>
+    </div>
+    
+    <div id="listaReservas"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
